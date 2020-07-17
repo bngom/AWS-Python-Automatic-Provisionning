@@ -15,7 +15,7 @@ def run_instance(config, user_data):
     instance_creation_response = instance.create()
     print(instance_creation_response)
 
-
+# put in the class
 def terminate_instance(config_path):
     instance_list = []
     configs = get_config(config_path)
