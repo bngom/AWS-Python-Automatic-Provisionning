@@ -5,6 +5,10 @@
 * Create S3 Buckets
 * ...
 
+#### Structure of the project
+
+![index](img/tree.PNG)
+
 #### Install the tool
 
  * `git clone https://github.com/bngom/AWS-Python-Automatic-Provisionning.git`
