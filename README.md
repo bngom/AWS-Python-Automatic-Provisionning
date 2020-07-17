@@ -5,11 +5,11 @@
 * Create S3 Buckets
 * ...
 
-#### Structure of the project
+### Structure of the project
 
 ![index](img/tree.PNG)
 
-#### Install the tool
+### Install the tool
 
  * `git clone https://github.com/bngom/AWS-Python-Automatic-Provisionning.git`
  * `cd AWS-Python-Automatic-Provisionning`
@@ -19,19 +19,19 @@
  * `pip install -r requirements.txt`
 
 
-#### Set up EC2 credentials
+### Set up EC2 credentials
 Create a directory `C:\Users\barth\.aws`
 in the folrder `.aws` create a file `credentials` and edit it with you IAM credentials
 ![img](img/credential.png)
 
-#### Create a Security Group on EC2
+### Create a Security Group on EC2
 ![index](img/sg.PNG)
 
-#### Create a IAM Role
+### Create a IAM Role
 ![index](img/role.PNG)
 We will use this when we will create a **S3 Bucket**
 
-#### The user data
+### The user data
 In configs folder we have a file **_user-data_** with the following instructions to deploy at launch web server.
 You can edit it if you want to perform specific actions.
 
@@ -42,7 +42,7 @@ You can edit it if you want to perform specific actions.
 * `systemctl enable httpd.service`
 * `echo "Hello world from $(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1)" > /var/www/html/index.html`
 
-#### The configuration
+### The configuration
 We created a JSON file to hold configuration data for our EC2 instance
 
 * `ami: "ami-08f3d892de259504d"` is the id of an Amazon Linux 2 AMI (HVM), SSD Volume Type
@@ -54,7 +54,7 @@ We created a JSON file to hold configuration data for our EC2 instance
 
 ![index](img/config.PNG)
 
-#### Launch an EC2 instance
+### Launch an EC2 instance
 
 You can launch an instance by executing the following command:
 
