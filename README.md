@@ -59,4 +59,4 @@ python main.py
 `
 ![index](img/main.PNG)
 
-![index](img/ec2.PNG)
+![index](img/ec2.png)
