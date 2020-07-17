@@ -43,6 +43,7 @@ systemctl start httpd.service
 systemctl enable httpd.service
 
 echo "Hello world from $(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1)" > /var/www/html/index.html
+
 `
 #### The configuration
 We created a JSON file to hold configuration data for our EC2 instance
