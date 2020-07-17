@@ -27,7 +27,7 @@ def terminate_instance(config_path):
         for reservation in response["Reservations"]:
             for instance in reservation["Instances"]:
                 # [TO DO] use instance['Tags'] to delete specific instances
-                #if instance is in running or stopped state
+                #if instance is in running [or stopped state to add later]
                 if instance['State']['Code'] == 16:
                     instance_list.append(instance['InstanceId'])
                     print(f"[INFO] Found '{instance['State']['Name']}' instance '{instance['InstanceId']}'")
