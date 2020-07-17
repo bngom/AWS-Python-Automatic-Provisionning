@@ -31,11 +31,17 @@ We will use this when we will create a **S3 Bucket**
 In configs folder we have a file **_user-data_** with the following instructions to deploy at launch web server.
 You can edit it if you want to perform specific actions.
 
-`#!/bin/bash
+`
+#!/bin/bash
+
 yum update -y
+
 yum install -y httpd.x86_64
+
 systemctl start httpd.service
+
 systemctl enable httpd.service
+
 echo "Hello world from $(/sbin/ip -o -4 addr list eth0 | awk '{print $4}' | cut -d/ -f1)" > /var/www/html/index.html
 `
 #### The configuration
@@ -54,6 +60,7 @@ We created a JSON file to hold configuration data for our EC2 instance
 
 You can launch an instance by executing the following command:
 
-`python main.py
+`
+python main.py
 `
 
