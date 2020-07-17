@@ -57,4 +57,6 @@ You can launch an instance by executing the following command:
 `
 python main.py
 `
+![index](img/main.PNG)
 
+![index](img/ec2.PNG)
