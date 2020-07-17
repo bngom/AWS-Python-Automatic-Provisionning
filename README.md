@@ -7,12 +7,12 @@
 
 #### Usage
 `
-git clone https://github.com/bngom/AWS-Python-Automatic-Provisionning.git
-cd AWS-Python-Automatic-Provisionning
-pip install virtualenv # You may need to add the installation folder into your PATH environment variable
-virtualenv pyaws
-pyaws\Scripts\activate.bat 
-pip install -r requirements.txt
+ git clone https://github.com/bngom/AWS-Python-Automatic-Provisionning.git
+ cd AWS-Python-Automatic-Provisionning
+ pip install virtualenv # You may need to add the installation folder into your PATH environment variable
+ virtualenv pyaws
+ pyaws\Scripts\activate.bat
+ pip install -r requirements.txt
 `
 
 #### Set up EC2 credentials
