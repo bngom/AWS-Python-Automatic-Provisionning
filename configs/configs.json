@@ -1,0 +1,24 @@
+{
+    "ami": "ami-08f3d892de259504d",
+    "region": "us-east-1",
+    "instance_type": "t2.micro",
+    "ssh_key_name": "des2020",
+    "security_group_ids": [
+        "sg-06ac9291b8825d886"
+    ],
+    "IamInstanceProfile":{
+                            "Arn": "arn:aws:iam::687939663692:instance-profile/ec2-s3-full-access"
+                     },
+    "filter_tag_key": "Purpose",
+    "filter_tag_value": "data-processing",
+    "set_new_instance_tags": [
+        {
+            "Key": "Purpose",
+            "Value": "data-processing"
+        },
+        {
+            "Key": "Name",
+            "Value": "MyEC2Instance"
+        }
+    ]
+}
