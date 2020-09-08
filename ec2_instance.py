@@ -22,6 +22,9 @@ class Instance:
         return configs
 
     def get_user_data(self):
+        """
+        
+        """
         with open(self._user_data_file_path, 'r') as f:
             user_data = f.read()
         return user_data
